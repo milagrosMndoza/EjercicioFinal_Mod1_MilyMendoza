@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejercicio Módulo 1</title>
+<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Zilla+Slab+Highlight" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amaranth|Bree+Serif|Lobster|Noto+Serif|Roboto+Slab" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+
+<header>
+<div id="logo" > <img src="img/html5.png" align="left"></div>
+	<div class="titulo"> <h1>Secciones y líneas generales de un documento HTML5</h1></div>
+ <!--  <a class="navbar-logo" href="#">
+       <img src="img/firefox-os.png" alt="FirefoxOS Logo">
+    </a>-->
+
+</header>
+<nav>
+    <ul id="menu">
+        <li ><a class="active" href="#">Menú 1</a></li>
+        <li><a href="#">Menú 2</a></li>
+        <li><a href="#">Menú 3</a></li>
+    </ul>
+</nav>
+
+<section id="section1" class="grid">
+<div class="box">
+
+       <div class="content" id="text1">
+        <p>La especificación HTML5 trae muchos nuevos elementos a los desarrolladores web, permitiéndoles describir la estructura de un documento web con semántica estandarizada. Este documento describe estos elementos y cómo usarlos para definir el perfil de cualquier documento.</p>
+        <b><h2>Problemas resueltos por HTML5</h2></b>
+        <p>La definición de la estructura de un documento en HTML 4 y su algoritmo de perfilado es muy tosco y genera numerosos problemas:</p>
+        <ol>
+            <li>HTML5 quita la necesidad de elementos <b>&lt;div> </b> para definir secciones semánticas sin definir valores específicos para los atributos class, introduciendo un nuevo elemento,<b> &lt;section> </b>, el elemento de sección HTML.</li>
+            <li>Mezclar varios documentos es difícil: la inclusión de un sub-documento en un documento principal. Esto se resuelve en HTML5 con los elementos de seccionado <b>(&lt;article>, &lt;section>, &lt;nav> y &lt;aside>)</b> son siempre subsecciones de su sección ancestra más cercana.</li>
+            <li>HTML5 introduce el elemento<b> &lt;hgroup> </b> que oculta todos los elementos de cabecera excepto el primero de más alto rango <b>(por ejemplo,&lt;hgroup>&lt;h1>Justine &lt;/h1> &lt;h2>Les Malheurs de la Vertu &lt;/h2> &lt;/hgroup> crea el perfil 1. Justine)</b>.</li>
+            <li>Un documento puede tener secciones especiales conteniendo información relacionado que no es parte del flujo principal. HTML5 introduce el elemento <b>&lt;aside> </b>permitiendo a dichas secciones no ser parte del perfil principal.</li>
+            <li>Hay información relacionada no al documento pero si al sitio entero, como logos, menús, tablas de contenidos, o información de derechos de autor y notas legales. Para ese propósito, HTML5 introduce tres elementos de sección específicos: <b>&lt;nav></b> para colecciones de enlaces, como una tabla de contenidos,<b>&lt;footer></b>  y <b>&lt;header></b> información relacionada con el sitio.</li>
+        </ol>
+        <p>De manera más general, HTML5 trae precisión a las características de seccionado y cabecera, permitiendo a los perfiles de documento ser predecibles y usados por el navegador para mejorar la experiencia de usuario.</p>
+        </div>
+       
+  
+  </div>
+  <aside class="box">
+     <div class="content" id="text2">
+          <b> <h2>El algoritmo de perfilado de HTML5</h2></b>
+       <b><h3>Definiendo secciones en HTML5</h3></b>
+       <p>Todo el contenido incluido dentro del elemento<b>&lt;body></b> es parte de una sección. Las secciones en HTML5 pueden ser anidadas. Además de la sección principal, definida por el elemento <b>&lt;body></b>, los límites de la sección son definidos explícita o implícitamente. La secciones definidas explícitamente son el contenido definido en las etiquetas <b>&lt;body>, &lt;section>, &lt;article>, &lt;aside>, &lt;footer>, &lt;header>, y &lt;nav></b>. Nota: Cada sección puede tener su propia jerarquía de cabeceras. Por lo tanto, incluso una sección anidada puede tener un elemento <b>&lt;h1></b>. Consulte también Definiendo cabeceras en HTML5.</p>
+     </div>
+     <img src="img/ejemplohtml.png">
+  </aside>
+</section>
+<br>
+<div id="footer">
+<div class="footer-below">
+	
+			<footer>
+				<div class="col-lg-12"> <small>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script></small> <small>Desarrollado por Milagros Mendoza</small> </div>
+			</footer>
+</div>
+</div>
+</body>
+</html>
